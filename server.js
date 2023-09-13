@@ -8,6 +8,7 @@ const app = express();
 app.use(cookieParser());
 
 const bcrypt = require("bcrypt");
+
 const passport = require("passport");
 const flash = require("express-flash");
 const session = require("express-session");
@@ -17,33 +18,33 @@ const filestore = require("session-file-store")(session)
 const initializePassport = require("./passport-config");
 
 /*Practice Async Function*/
-function resolveAfter2Seconds(x) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(x);
-    }, 2000);
-  });
-}
+// function resolveAfter2Seconds(x) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(x);
+//     }, 2000);
+//   });
+// }
 
 // async function expression assigned to a variable
-const add = async function (x) {
-  const a = await resolveAfter2Seconds(20);
-  const b = await resolveAfter2Seconds(30);
-  return x + a + b;
-};
+// const add = async function (x) {
+//   const a = await resolveAfter2Seconds(20);
+//   const b = await resolveAfter2Seconds(30);
+//   return x + a + b;
+// };
 
-add(10).then((v) => {
-  console.log(v); // prints 60 after 4 seconds.
-});
+// add(10).then((v) => {
+//   console.log(v); // prints 60 after 4 seconds.
+// });
 
 // async function expression used as an IIFE
-(async function (x) {
-  const p1 = resolveAfter2Seconds(20);
-  const p2 = resolveAfter2Seconds(30);
-  return x + (await p1) + (await p2);
-})(10).then((v) => {
-  console.log(v); // prints 60 after 2 seconds.
-});
+// (async function (x) {
+//   const p1 = resolveAfter2Seconds(20);
+//   const p2 = resolveAfter2Seconds(30);
+//   return x + (await p1) + (await p2);
+// })(10).then((v) => {
+//   console.log(v); // prints 60 after 2 seconds.
+// });
 /*Practice Async Function*/
 
 
@@ -120,6 +121,7 @@ app.get("/register", checkNotAuth, (req, res) => {
 app.post("/register", checkNotAuth, async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    //const hashedPassword = await bcrypt.encrypt(req.body.password, 10);
     users.push({
       id: Date.now().toString(),
       name: req.body.name,
