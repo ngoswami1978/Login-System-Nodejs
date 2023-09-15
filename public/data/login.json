@@ -1,0 +1,27 @@
+[
+    {
+    "id": "100001",
+    "user":"deepakroom1",
+    "password":"8849426367",
+    "room":"1"    
+ },
+ {
+    "id": "100002",
+    "user":"deepakroom2",
+    "password":"8849426367",
+    "room":"2"
+ },
+ {
+    "id": "100003",
+    "user":"devenderroom3",
+    "password":"8849426367",
+    "room":"3"
+ },
+  {
+    "id": "100004",
+    "user":"middatroom4",
+    "password":"8849426367",
+    "room":"2"
+ }
+
+]

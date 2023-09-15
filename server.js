@@ -2,6 +2,9 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const fs = require("fs");
+const lib = require("./readwrite");
+
 const session = require('express-session');
 const {v4 : uuidv4} = require('uuid');
 const router = require('./router');
@@ -30,6 +33,8 @@ app.use(session({
 }));
 
 app.use('/route',router);
+
+const result = lib.main();
 
 //Home Route.
 //res.render() function is used to render a view and sends the rendered HTML string to the client. 
