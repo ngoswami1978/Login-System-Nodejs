@@ -15,10 +15,7 @@ var requestCredential = {
 var folderName_ = path.join((__dirname,'public/data'));
 //var dt_datePicker=Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: '2-digit'}).format(new Date());
 var dt_datePicker=Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeStyle: 'long', timeZone: 'Asia/Calcutta' }).format(new Date())
-
-
 console.log(folderName_);
-
 
 const keyFilter = function keyFilter(user) {
     return function keyFilterMethod(item) {
