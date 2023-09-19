@@ -52,7 +52,7 @@ router.get('/logout', (req ,res)=>{
             res.send("Error")
         }
         else{
-            res.render('base', { title: "Express", logout : "logout Successfully...!"})
+            res.render('base', { title: "Login System", logout : "logout Successfully...!"})
         }
     })
 })

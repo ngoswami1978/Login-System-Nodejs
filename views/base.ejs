@@ -3,7 +3,7 @@
     <div class="mt-0 col-md-4 col-md-offset-4 form-card border py-5 blur">
         <div class="text-center center-div" id="login">
             <div class="title pb-5">
-                <h2 class="font-weight-bold">Login System</h2>
+                <h2 class="font-weight-bold"><%=title%></h2>
                 <span><b>Login for the existing user.</b></span>
                 <% if(locals.logout){ %>
                     <div class="alter alert-success text-center">
@@ -16,7 +16,7 @@
             <form action="/route/login" method="POST" class="pt-3">
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Enter your Email ID" name="email">
-                    <small class="form-text text-muted text-left text-primary">Register Email Address</small>
+                    <small class="text-white bg-dark">Register Email Address</small>
                     <div class="form-group my-3">
                         <input type="password" class="form-control" placeholder="Enter your Password" name="password">
                     </div>
