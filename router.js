@@ -1,6 +1,7 @@
 //This page is used for Logging in the Application.
 var express = require("express");
 var router = express.Router();
+const lib = require("./readwrite");
 
 const credential = {
     email : "admin@gmail.com",
@@ -9,19 +10,55 @@ const credential = {
 
 //Router.post() submits the data whereas router.get() requests the data.
 // login user
-router.post('/login', (req, res)=>{
-    if(req.body.email == credential.email && req.body.password == credential.password){
+//  router.post('/login', (req, res)=>{
+//     credential.email = req.body.email;
+//     credential.password = req.body.password;
+    
+//     const result =  lib.main(credential);
 
-        req.session.user = req.body.email;
-        //res.redirect('/route/dashboard');
-        res.redirect('/route/index');        
-        //res.end("Login Successful...!");
+//     if(req.body.email == credential.email && req.body.password == credential.password){
+
+//         req.session.user = req.body.email;
+//         //res.redirect('/route/dashboard');
+//         res.redirect('/route/index');        
+//         //res.end("Login Successful...!");
+//     }
+//     else{
+//         //res.end() function is used to end the response process.
+//         res.end("Invalid Username")
+//     }
+// });
+
+router.post('/login', async (req, res)=>{
+    credential.email = req.body.email;
+    credential.password = req.body.password;
+    
+    const result =  await lib.main(credential);
+    if (typeof result !== 'undefined' && result !== null)
+    {
+        if (result.length!=0)
+        {
+            if(req.body.email == result[0].email && req.body.password == result[0].password){
+
+                req.session.user = req.body.email;
+                //res.redirect('/route/dashboard');
+                res.redirect('/route/index');        
+                //res.end("Login Successful...!");
+            }
+            else{
+                //res.end() function is used to end the response process.
+                res.end("Invalid Username")
+            }
+        }
+        else{
+            res.end("Invalid Username")
+            }
     }
     else{
-        //res.end() function is used to end the response process.
         res.end("Invalid Username")
     }
 });
+
 
 // route for dashboard
 router.get('/dashboard', (req, res) => {

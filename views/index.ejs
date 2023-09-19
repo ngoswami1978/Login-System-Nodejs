@@ -12,6 +12,11 @@
 <h5>
   <%= locals.user ? user : "User" %>
 </h5>
+
+<form action="/route/logout" method="GET">
+  <button type="submit">Log Out</button>
+</form>
+
 <!-- <a href="/route/logout">Logout</a> -->
 <section style="background: linear-gradient(to right, #b92b27, #1565c0)">
 
@@ -165,11 +170,5 @@
 
   </div>
   </div>
-
-<form action="/route/logout" method="GET">
-  <button type="submit">Log Out</button>
-</form>
-
-
 
 <%-include ('footer')-%>

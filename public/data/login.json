@@ -1,26 +1,32 @@
 [
+   {
+      "id": "100000",
+      "user":"neeraj.login@gmail.com",
+      "password":"super@123",
+      "room":"1"    
+   },
     {
     "id": "100001",
-    "user":"deepakroom1",
-    "password":"8849426367",
+    "user":"deepak@gmail.com",
+    "password":"9899846293",
     "room":"1"    
  },
  {
     "id": "100002",
-    "user":"deepakroom2",
-    "password":"8849426367",
+    "user":"deepak@gmail.com",
+    "password":"9899846293",
     "room":"2"
  },
  {
     "id": "100003",
-    "user":"devenderroom3",
-    "password":"8849426367",
+    "user":"devender@gmail.com",
+    "password":"9899846293",
     "room":"3"
  },
   {
     "id": "100004",
-    "user":"middatroom4",
-    "password":"8849426367",
+    "user":"middat@gmail.com",
+    "password":"9899846293",
     "room":"2"
  }
 
