@@ -41,7 +41,7 @@ images.forEach
 
 // (D) GALLERY IMAGES & PAGE
 app.use("/public", express.static(path.join(__dirname, "public")))
-app.use("/gallery", express.static(path.join(__dirname, "/gallery")))
+app.use("/gallery", express.static(path.join(__dirname, "")))
 app.get("/gallery", (req, res) => 
     res.render("2a-gallery.ejs" , 
     {
