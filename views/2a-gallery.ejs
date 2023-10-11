@@ -1,0 +1,22 @@
+<%-include ('header')-%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Image Gallery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/2b-gallery.css">
+    <script src="/public/2c-gallery.js"></script>
+  </head>
+  <body>
+    <div class="gallery">
+      <% images.forEach((img, i) => {         
+        %>
+      <figure>
+        <img src="<%= img %>">
+        <figcaption><%= names[i] %></figcaption>
+      </figure>
+      <% }); %>
+    </div>
+  </body>
+</html>
+<%-include ('footer')-%>

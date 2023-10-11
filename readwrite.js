@@ -121,6 +121,5 @@ async function main(requestCredential) {
     return names;
 }
 
-//main()
-
+//Export to main method()
 module.exports = { main };;

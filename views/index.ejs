@@ -7,15 +7,28 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-
-<h3>Welcome To Express Dashboard</h3>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"> <%= locals.user ? user : "User" %></a>
+  <!-- Links -->  
+    <a class="nav-link" href="/route/logout" id="navbardrop" method="GET">
+        Log Out
+    </a>
+</nav>
+<!-- <h3>Welcome To Express Dashboard</h3>
 <h5>
   <%= locals.user ? user : "User" %>
-</h5>
+</h5> -->
 
-<form action="/route/logout" method="GET">
-  <button type="submit">Log Out</button>
-</form>
+<!-- <form action="/route/logout" method="GET">  
+  <button type="submit" class="btn btn-primary">Log Out</button>
+</form> -->
+
+
+
+<small class="card-text" style="background: linear-gradient(to right, #e4dddd, #9ac1ec);font-weight: bold;color: red;">Security will not be adjusted in Rent while vacate.</small>
+<p><small class="card-text" style="background: linear-gradient(to right, #e4dddd, #9ac1ec);font-weight: bold;color: red;">Security is always refund after inspection and receiving room key.</small></p>
+<p><small class="card-text" style="background: linear-gradient(to right, #e4dddd, #9ac1ec);font-weight: bold;color: red;">Amount of ₹ 500/- will be deducted in security for the room cleaning charges.</small></p>
 
 <!-- <a href="/route/logout">Logout</a> -->
 <section style="background: linear-gradient(to right, #b92b27, #1565c0)">
@@ -25,62 +38,68 @@
 
       <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
+            <img class="card-img-top" src="/assets/PoliceVerification.jpg" alt="Card image">
               <div class="card-body text-center">
-                  <h4 class="card-title title-section">John Doe</h4>                  
-                  <p class="card-text">Some text inside the first card</p>
+                  <h4 class="card-title title-section">Police Verification</h4>                  
+                  <p class="card-text">Download</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Click download in pdf</small>
               </div>
           </div>
       </div>
 
       <div class="col mb-3">
         <div class="card">
-          <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
+          <img class="card-img-top" src="/assets/security_system.jpg" alt="Card image">
             <div class="card-body text-center">
-                <h4 class="card-title title-section">John Doe</h4>                  
-                <p class="card-text">Some text inside the first card</p>
+                <h4 class="card-title title-section">Security Amount paid</h4>                  
+                <p class="card-text">₹ 13000</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">Occupied date 20/10/2023  </small>
             </div>
         </div>
     </div>
 
     <div class="col mb-3">
       <div class="card">
-        <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
+        <img class="card-img-top" src="/assets/rent.jpg" alt="Card image">
           <div class="card-body text-center">
-              <h4 class="card-title title-section">John Doe</h4>                  
-              <p class="card-text">Some text inside the first card</p>
+              <h4 class="card-title title-section">Monthly Advance Rent</h4>                  
+              <p class="card-text">₹ 13000</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+            <small class="text-muted">Pay Rent in Advance every month before 10</small>
           </div>
       </div>
   </div>
 
   <div class="col mb-3">
     <div class="card">
-      <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
+      <img class="card-img-top" src="/assets/washing_machine.png" alt="Card image">
         <div class="card-body text-center">
-            <h4 class="card-title title-section">John Doe</h4>                  
-            <p class="card-text">Some text inside the first card</p>
+            <h4 class="card-title title-section">Washing Machine</h4>                  
+            <p class="card-text">Subscribed</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <small class="text-muted">Subscription date from 10/09/2023 to 10/10/2023</small>
         </div>
     </div>
 </div>
 
 <div class="col mb-3">
   <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
+    <img class="card-img-top" src="/assets/amenities.jpg" alt="Card image">
       <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
+          <h4 class="card-title title-section">Amenities</h4>                  
+          <small>(1)Air Conditioner (2)RO Water (3)Geyser (4)Refrigerator
+             (5)Smart Television with Amazone FireStick (6)Electricity Backup
+             (7)Gate Security System (8)Cope Light (9)Wifi (10)Washing Machine
+             (11)Security Camera
+          </small>
+          <p>
+          <small style="color: #b92b27;">Wifi,Fan,Light & Exhaust Fans is common for all</small></p>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
@@ -92,76 +111,11 @@
   <div class="card">
     <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
       <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
+          <h4 class="card-title title-section">Mahesh kumar Yadav</h4>                  
+          <p class="card-text">Care Taker Available from 08:00AM to 11:30PM daily</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-<div class="col mb-3">
-  <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
-      <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-<div class="col mb-3">
-  <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
-      <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-<div class="col mb-3">
-  <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
-      <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-<div class="col mb-3">
-  <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
-      <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-<div class="col mb-3">
-  <div class="card">
-    <img class="card-img-top" src="/assets/image.jpeg" alt="Card image">
-      <div class="card-body text-center">
-          <h4 class="card-title title-section">John Doe</h4>                  
-          <p class="card-text">Some text inside the first card</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Reach him @7235847172</small>
       </div>
   </div>
 </div>
