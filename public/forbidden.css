@@ -1,0 +1,32 @@
+body{
+  background-color: #100;
+  color: white;
+  }
+  
+  h1 {
+  color: red;
+  }
+  
+  h6{
+  color: red;
+    font-weight: 100;
+  text-decoration: none; /*underline;*/
+  }
+  
+  
+.notfound a {
+  font-family: titillium web,sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  background: #5c91fe;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 1px;
+  margin-top: 15px;
+  -webkit-transition: .2s all;
+  transition: .2s all
+}

@@ -66,7 +66,8 @@ router.get('/dashboard', (req, res) => {
         res.render('dashboard', {user : req.session.user})
     }
     else{
-        res.send("Unauthorize User")
+        //res.send("Unauthorize User")
+        res.render('unauthorized')
     }
 })
 
