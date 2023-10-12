@@ -28,7 +28,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#"> 👩‍💻 <%= locals.user ? user : "User" %></a>
+  <a class="navbar-brand" href="#"> Welcome 👩‍💻 <%= locals.user ? user : "User" %></a>
   <!-- Links -->  
   <div class="notfound">
     <a class="nav-link" href="/route/logout" id="navbardrop" method="GET">
@@ -63,11 +63,11 @@
           <div class="card">
             <img class="card-img-top" src="/assets/PoliceVerification.jpg" alt="Card image">
               <div class="card-body text-center">
-                  <h4 class="card-title title-section">Police Verification</h4>                  
-                  <p class="card-text">Download</p>
+                  <h4 class="card-title title-section">Police Verification</h4>                                    
+                  <a href="/route/downloadPVCfile/room1.pdf" class="card-text">Download</a>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Click download in pdf</small>
+                <small class="text-muted">Click above link to download police verification (pdf)</small>
               </div>
           </div>
       </div>

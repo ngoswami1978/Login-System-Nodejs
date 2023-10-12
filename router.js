@@ -2,6 +2,7 @@
 var express = require("express");
 var router = express.Router();
 const lib = require("./readwrite");
+const fs = require('fs');
 
 const credential = {
     email : "admin@gmail.com",
@@ -59,7 +60,6 @@ router.post('/login', async (req, res)=>{
     }
 });
 
-
 // route for dashboard
 router.get('/dashboard', (req, res) => {
     if(req.session.user){
@@ -81,7 +81,6 @@ router.get('/index', (req, res) => {
     }
 })
 
-
 // route for logout
 router.get('/logout', (req ,res)=>{
     req.session.destroy(function(err){
@@ -94,5 +93,20 @@ router.get('/logout', (req ,res)=>{
         }
     })
 })
+
+router.get('/downloadPVCfile/:filename', async(req, res) => {   
+    const filename_ = req.params.filename;
+    const filePath = `${__dirname}/public/data/PVC/${filename_}`;
+
+    fs.readFile(filePath, (err, file) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).send('Could not download file');
+        }
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', 'attachment; filename="PoliceVerification.pdf"');
+        res.send(file);
+    });    
+});
 
 module.exports = router;

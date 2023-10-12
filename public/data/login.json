@@ -3,31 +3,36 @@
       "id": "100000",
       "user":"neeraj.login@gmail.com",
       "password":"super@123",
-      "room":"6"    
+      "room":"6",
+      "policeveriCert":"room1.pdf"
    },
     {
     "id": "100001",
     "user":"deepak@gmail.com",
     "password":"9899846293",
-    "room":"1"    
+    "room":"1",
+    "policeveriCert":"room1.pdf"
  },
  {
     "id": "100002",
     "user":"deepak@gmail.com",
     "password":"9899846293",
-    "room":"2"
+    "room":"2",
+    "policeveriCert":"room1.pdf"
  },
  {
     "id": "100003",
     "user":"devender@gmail.com",
     "password":"9899846293",
-    "room":"3"
+    "room":"3",
+    "policeveriCert":"room1.pdf"
  },
   {
     "id": "100004",
     "user":"middat@gmail.com",
     "password":"9899846293",
-    "room":"4"
+    "room":"4",
+    "policeveriCert":"room1.pdf"
  }
 
 ]

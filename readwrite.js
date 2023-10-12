@@ -13,6 +13,7 @@ var requestCredential = {
 //Informing server about assets.(Linking the background image in assets folder)
 //app.use('/data',express.static(path.join((__dirname,'public/data'))))
 var folderName_ = path.join((__dirname,'public/data'));
+
 //var dt_datePicker=Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: '2-digit'}).format(new Date());
 var dt_datePicker=Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeStyle: 'long', timeZone: 'Asia/Calcutta' }).format(new Date())
 console.log(folderName_);
@@ -122,4 +123,4 @@ async function main(requestCredential) {
 }
 
 //Export to main method()
-module.exports = { main };;
+module.exports = { main };
