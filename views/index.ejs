@@ -4,8 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="icon" type="images/x-icon" href="/assets/god_cropped.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+  -->
+  <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- 
+<button class="btn btn-primary" type="button">
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Click me...
+</button> -->
+
   <style>       
     .notfound a {
     font-family: titillium web,sans-serif;
@@ -24,11 +33,21 @@
     transition: .2s all
   }
   body{
-    background-color: #466768;
+    background-color: #f6fa0a;
   }
   
   </style>
 </head>
+
+<!-- <script>
+  $(() => {
+  $('button').on('click', e => {
+    let spinner = $(e.currentTarget).find('span')
+    spinner.removeClass('d-none')
+    setTimeout(_ => spinner.addClass('d-none'), 2000)
+  })
+})
+</script> -->
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
@@ -49,13 +68,12 @@
   <button type="submit" class="btn btn-primary">Log Out</button>
 </form> -->
 
-
 <small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"><u>Notice.</u></small><br>
-<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(14, 13, 13);font-family: Verdana, Geneva, Tahoma, sans-serif;"># 10 per rupees unit will be charged on electricity consumption.</small><br>
-<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(14, 13, 13);font-family: Verdana, Geneva, Tahoma, sans-serif;"># Security will not be adjusted in the rent upon vacating the room.</small><br>
-<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(4, 13, 13);font-family: Verdana, Geneva, Tahoma, sans-serif;"># The security deposit is fully refundable after a room inspection, provided that the tenant returns the key.</small><br>
-<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(14, 13, 13);font-family: Verdana, Geneva, Tahoma, sans-serif;"># An amount of ₹500 will be deducted from the security deposit for room cleaning services.</small><br>
-<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(14, 13, 13);font-family: Verdana, Geneva, Tahoma, sans-serif;"># Only defects that exceed ordinary wear and tear are allowed to be deducted from the security deposit.</small>
+<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"># 10 per rupees unit will be charged on electricity consumption.</small><br>
+<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"># Security will not be adjusted in the rent upon vacating the room.</small><br>
+<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"># The security deposit is fully refundable after a room inspection, provided that the tenant returns the key.</small><br>
+<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"># An amount of ₹500 will be deducted from the security deposit for room cleaning services.</small><br>
+<small class="card-text" style="font-size: x-small; font-weight: bold;color: rgb(237 29 5);font-family: Verdana, Geneva, Tahoma, sans-serif;"># Only defects that exceed ordinary wear and tear are allowed to be deducted from the security deposit.</small>
 
 
 <!-- <a href="/route/logout">Logout</a> -->
@@ -108,8 +126,8 @@
       <img class="card-img-top" src="/assets/washing_machine.png" alt="Card image">
         <div class="card-body text-center">
             <h4 class="card-title title-section">Washing Machine</h4>                  
-            <p class="card-text">Subscribed</p>
-            
+            <span  class="spinner-grow spinner-grow-sm text-success"></span><!-- text-danger -->
+            <span class="card-text">Subscribed</span>            
         </div>
         <div class="card-footer">
           <small class="text-muted">Subscription date from 10/09/2023 to 10/10/2023</small>
@@ -138,7 +156,8 @@
 
 <div class="col mb-3">
   <div class="card">
-    <img class="card-img-top" src="/assets/Mahesh.jpg" alt="Card image">
+    <img class="card-img-top" src="/assets/Mahesh.jpg" alt="Mahesh Yadav care taker U80/7">
+    <!-- <img src="/assets/Mahesh.jpg" class="rounded" alt="Cinque Terre"> -->
       <div class="card-body text-center">
           <h4 class="card-title title-section">Mahesh kumar Yadav</h4>                  
           <p class="card-text">Care Taker Available from 08:00AM to 11:30PM daily</p>
@@ -149,9 +168,5 @@
   </div>
 </div>
 </section>
-
-
-  </div>
-  </div>
 
 <%-include ('footer')-%>

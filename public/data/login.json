@@ -43,35 +43,35 @@
 },
 {
    "id": "100007",
-   "user":"khan.login@gmail.com",
+   "user":"khan@gmail.com",
    "password":"100007",
    "room":"7",
    "policeveriCert":"room7.pdf"
 },
 {
    "id": "100008",
-   "user":"manohar.login@gmail.com",
+   "user":"manohar@gmail.com",
    "password":"100008",
    "room":"8",
    "policeveriCert":"room8.pdf"
 },
 {
    "id": "100009",
-   "user":"rashmi.login@gmail.com",
+   "user":"rashmi@gmail.com",
    "password":"100009",
    "room":"9",
    "policeveriCert":"room9.pdf"
 },
 {
    "id": "1000010",
-   "user":"sonam.login@gmail.com",
+   "user":"sonam@gmail.com",
    "password":"1000010",
    "room":"10",
    "policeveriCert":"room10.pdf"
 },
 {
    "id": "1000011",
-   "user":"ritesh.login@gmail.com",
+   "user":"ritesh@gmail.com",
    "password":"1000011",
    "room":"11",
    "policeveriCert":"room11.pdf"
