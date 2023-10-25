@@ -43,7 +43,7 @@ router.post('/login', async (req, res)=>{
 
                 req.session.user = req.body.email;
                 //res.redirect('/route/dashboard');
-                res.redirect('/route/index');        
+                res.redirect('/route/index');                        
                 //res.end("Login Successful...!");
             }
             else{
@@ -59,6 +59,7 @@ router.post('/login', async (req, res)=>{
         res.end("Invalid Username")
     }
 });
+
 
 // route for dashboard
 router.get('/dashboard', (req, res) => {

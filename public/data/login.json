@@ -4,77 +4,131 @@
     "user":"deepak@gmail.com",
     "password":"100001",
     "room":"1",
-    "policeveriCert":"room1.pdf"
+    "policeveriCert":"room1.pdf",
+    "washSubscription":"",
+    "monthlyRent":"",
+    "security":"",
+    "rentAggrement":"room1Aggrement.pdf",
+    "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
  },
  {
     "id": "100002",
     "user":"ankita@gmail.com",
     "password":"100002",
     "room":"2",
-    "policeveriCert":"room2.pdf"
+    "policeveriCert":"room2.pdf",
+    "washSubscription":"",
+    "monthlyRent":"",
+    "security":"",
+    "rentAggrement":"room2Aggrement.pdf",
+    "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
  },
  {
     "id": "100003",
     "user":"devender@gmail.com",
     "password":"100003",
     "room":"3",
-    "policeveriCert":"room3.pdf"
+    "policeveriCert":"room3.pdf",
+    "washSubscription":"13-Oct-2023",
+    "monthlyRent":"",
+    "security":"",
+    "rentAggrement":"room3Aggrement.pdf",
+    "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
  },
   {
     "id": "100004",
     "user":"middat@gmail.com",
     "password":"100004",
     "room":"4",
-    "policeveriCert":"room4.pdf"
+    "policeveriCert":"room4.pdf",
+    "washSubscription":"",
+    "monthlyRent":"",
+    "security":"",
+    "rentAggrement":"room4Aggrement.pdf",
+    "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
  },
  {
    "id": "100005",
    "user":"srishti@gmail.com",
    "password":"100005",
    "room":"5",
-   "policeveriCert":"room5.pdf"
+   "policeveriCert":"room5.pdf",
+   "washSubscription":"",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room5Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
   "id": "100006",
   "user":"sumit@gmail.com",
   "password":"100006",
   "room":"6",
-  "policeveriCert":"room6.pdf"
+  "policeveriCert":"room6.pdf",
+  "washSubscription":"",
+  "monthlyRent":"",
+  "security":"",
+  "rentAggrement":"room6Aggrement.pdf",
+  "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
    "id": "100007",
    "user":"khan@gmail.com",
    "password":"100007",
    "room":"7",
-   "policeveriCert":"room7.pdf"
+   "policeveriCert":"room7.pdf",
+   "washSubscription":"",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room7Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
    "id": "100008",
    "user":"manohar@gmail.com",
    "password":"100008",
    "room":"8",
-   "policeveriCert":"room8.pdf"
+   "policeveriCert":"room8.pdf",
+   "washSubscription":"",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room8Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
    "id": "100009",
    "user":"rashmi@gmail.com",
    "password":"100009",
    "room":"9",
-   "policeveriCert":"room9.pdf"
+   "policeveriCert":"room9.pdf",
+   "washSubscription":"10-Oct-2023",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room9Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
    "id": "1000010",
    "user":"sonam@gmail.com",
    "password":"1000010",
    "room":"10",
-   "policeveriCert":"room10.pdf"
+   "policeveriCert":"room10.pdf",
+   "washSubscription":"24-Oct-2023",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room10Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 },
 {
    "id": "1000011",
    "user":"ritesh@gmail.com",
    "password":"1000011",
    "room":"11",
-   "policeveriCert":"room11.pdf"
+   "policeveriCert":"room11.pdf",
+   "washSubscription":"",
+   "monthlyRent":"",
+   "security":"",
+   "rentAggrement":"room11Aggrement.pdf",
+   "returnItems":"RoomKey|2,AccessCard|2,Firestick|1,FirestickRemote|1,ACRemote|1,TVRemote|1"
 }
-
 ]
