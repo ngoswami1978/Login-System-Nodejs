@@ -109,5 +109,32 @@ router.get('/downloadPVCfile/:filename', async(req, res) => {
         res.send(file);
     });    
 });
+router.get('/downloadTermCondfile/:filename', async(req, res) => {   
+    const filename_ = req.params.filename;
+    const filePath = `${__dirname}/public/data/TermCondition/${filename_}`;
 
+    fs.readFile(filePath, (err, file) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).send('Could not download file');
+        }
+        res.setHeader('Content-Type', 'application/image');
+        res.setHeader('Content-Disposition', 'attachment; filename="TermCondition_U_80_7.jpg"');
+        res.send(file);
+    });    
+});
+router.get('/downloadTermCondpdf/:filename', async(req, res) => {   
+    const filename_ = req.params.filename;
+    const filePath = `${__dirname}/public/data/TermCondition/${filename_}`;
+
+    fs.readFile(filePath, (err, file) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).send('Could not download file');
+        }
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', 'attachment; filename="TermCondition_U_80_7.pdf"');
+        res.send(file);
+    });    
+});
 module.exports = router;
