@@ -32,16 +32,23 @@ const credential = {
 
 router.post('/login', async (req, res)=>{
     credential.email = req.body.email;
-    credential.password = req.body.password;
-    
+    credential.password = req.body.password;    
     const result =  await lib.main(credential);
+
     if (typeof result !== 'undefined' && result !== null)
     {
         if (result.length!=0)
         {
             if(req.body.email == result[0].email && req.body.password == result[0].password){
 
-                req.session.user = req.body.email;
+                req.session.user = result[0].email;
+                req.session.room = result[0].room;
+                req.session.policeveriCert = result[0].policeveriCert;
+                req.session.washSubscription = result[0].washSubscription;
+                req.session.monthlyRent = result[0].monthlyRent;
+                req.session.security = result[0].security;
+                req.session.rentAggrement = result[0].rentAggrement;
+                req.session.returnItems = result[0].returnItems;
                 //res.redirect('/route/dashboard');
                 res.redirect('/route/index');                        
                 //res.end("Login Successful...!");

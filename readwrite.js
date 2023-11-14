@@ -34,6 +34,12 @@ async function readNamesFromFiles(nameFiles,requestCredential) {
         email:"",
         password:"",
         room:"",
+        policeveriCert:"",
+        washSubscription:"",
+        monthlyRent:"",
+        security:"",
+        rentAggrement:"",
+        returnItems:"",
         accessdate:""
     }
 
@@ -49,6 +55,12 @@ async function readNamesFromFiles(nameFiles,requestCredential) {
                 object.email=requestCredential.email;
                 object.password=requestedItem.password;            
                 object.room=requestedItem.room;
+                object.policeveriCert=requestedItem.policeveriCert;
+                object.washSubscription=requestedItem.washSubscription;
+                object.monthlyRent=requestedItem.monthlyRent;
+                object.security=requestedItem.security;
+                object.rentAggrement=requestedItem.rentAggrement;
+                object.returnItems=requestedItem.returnItems;
                 object.accessdate=dt_datePicker;
                 names.push(object);                
                 //names.push(requestedItem.email)
@@ -58,7 +70,13 @@ async function readNamesFromFiles(nameFiles,requestCredential) {
                 object.loginStatus="false";
                 object.email=requestCredential.email;
                 object.password="na";            
-                object.room="na";            
+                object.room="na";        
+                object.policeveriCert="na";
+                object.washSubscription="na";
+                object.monthlyRent="na";
+                object.security="na";
+                object.rentAggrement="na";
+                object.returnItems="na";
                 object.accessdate=dt_datePicker;
                 names.push(object);    
             }
@@ -69,6 +87,12 @@ async function readNamesFromFiles(nameFiles,requestCredential) {
             object.email=requestCredential.email;
             object.password="na";            
             object.room="na";            
+            object.policeveriCert="na";
+            object.washSubscription="na";
+            object.monthlyRent="na";
+            object.security="na";
+            object.rentAggrement="na";
+            object.returnItems="na";
             object.accessdate=dt_datePicker;
             names.push(object);
             //names.push(requestCredential.email + ' Not Found\n');
